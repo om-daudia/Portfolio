@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e3f2fd;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background: #0d47a1;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+    margin-left: auto;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0.8rem;
+}
+nav ul li a:hover {
+    color: #64b5f6;
+}
+
+/* Theme Toggle Button Inside Navbar */
+#theme-toggle {
+    background: transparent;
+    border: 2px solid #64b5f6;
+    color: #64b5f6;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+#theme-toggle:hover {
+    background: #64b5f6;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #42a5f5, #0d47a1);
+    color: white;
+    padding: 2rem;
+}
+.hero-content h2 {
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0d47a1;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #1565c0;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Skills and Projects - Remove Pointers */
+#skills ul, #projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode nav {
+    background: #1e1e1e;
+}
+
+.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #64b5f6;
+}
+
+.dark-mode .btn {
+    background: #1565c0;
+}
+
+.dark-mode .btn:hover {
+    background: #64b5f6;
+    color: #121212;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(to right, #0d47a1, #1e1e1e);
+}
+
+.dark-mode #theme-toggle {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+.dark-mode #theme-toggle:hover {
+    background: #e0e0e0;
+    color: #121212;
+}
